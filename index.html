@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Samaniego - Software Engineer</title>
+    <link rel= "stylesheet" href = "styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <!--<h1 class="logo">Miles Samaniego<br><div style="color:#8a8a8a;">Software Engineer</div></h1>-->
+        <nav>
+            <a href="#circles" title="About Me"><i class="fas fa-user" aria-label="About Me"></i></a>
+            <a href="#projects" title="Projects"><i class="fas fa-laptop-code" aria-label="Projects"></i></a>
+            <a href="#contact" title="Contact"><i class="fas fa-envelope" aria-label="Contact"></i></a>
+            
+        </nav>
+    </header>
+    
+    <section id="about" style="margin-top: 100px;">
+        
+        
+        <div class="headshot-container">
+            <div class="nameLogoLeft" id="nameLogoLeft"> <div class="LOGObackground"></div>Miles<br><div style="color:#8a8a8a;">Samaniego</div></div>
+            <div class="nameLogoRight" id="nameLogoRight"> <div class="LOGObackground"></div>Software <br><div style="color:#8a8a8a;">Engineer</div></div>
+            <img src="headshot.jpg" alt="Miles Samaniego" class="headshot" id="headshot">
+            <div class="blur-effect" id="blur-effect"></div>
+        </div>
+        
+        
+        <div class="button-container">
+            <a href="mailto:miles.samaniego@gmail.com" class="button" title="Email Me"><i class="fas fa-envelope" aria-label="Email"></i></a>
+            <a href="https://www.linkedin.com/in/miles-samaniego" class="button" title="LinkedIn"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></a>
+            <a href="https://github.com/miles-samaniego" class="button" title="GitHub"><i class="fab fa-github" aria-label="GitHub"></i></a>
+            <a href="Resume.pdf" class="button" download title="Download Resume"><i class="fas fa-file-download" aria-label="Resume"></i></a>
+        </div>
+       
+    </section>
+
+    <h2 style="text-align: center; ">About Me</h2>
+    <section id="circles" style="margin-bottom: 200px; text-shadow: 1px 1px 2px rgba(240, 231, 245, 0), 0 0 1em rgba(201, 166, 244, 0.54), 0 0 0.2em rgba(227, 194, 253, 0.903);">
+
+        
+        
+        <div class="circle-container">
+            <div class="circle" >
+                <div class="BUBBLEbackground"></div>
+                <h1 style="font-size: xx-large;">Education</h1>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">University of Michigan</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Major - Computer Science</p>
+                <p style="font-size: medium;; font-weight: 700; margin: 7px;"> Cummulative GPA - 3.55</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;"> CS GPA - 3.40</p>
+            
+            </div>
+
+            <div class="circle">
+                <div class="BUBBLEbackground"></div>
+                <h1 style="font-size: xx-large;">Languages</h1>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">C/C++ (2+ Years)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Python (2+ Years)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">JavaScript (30+ Hours)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">HTML/CSS (20+ Hours)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">OCaml (20+ Hours)</p>
+            
+            </div>
+            <div class="circle">
+                <div class="BUBBLEbackground"></div>
+                <h1 style="font-size: xx-large;">Other Skills/Interests</h1>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Video Editing (4+ Years)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Music Production (4+ Years)</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Music</p>
+                <p style="font-size: medium; font-weight: 700; margin: 7px;">Fashion</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Live</h3>
+            <p>Live is a map-based social media experience meant to bring people off of their phone and into real-life social interaction. I am working with a team of 7 students to design, develop, and launch this startup application. (Coming Fall 2025)</p>
+        </div>
+        <div class="project">
+            <h3>AInvestments</h3>
+            <p>I have implemented and trained the OpenAI API to give users stock market and crypto currency investment recommendations based on their preferences. I have also trained LSTM models to predict future stock prices to feed the outdated OpenAI API (last trained in 2022). I am currently working to connect these processes using AWS Sagemaker, S3, and Docker</p>
+        </div>
+        <div class="project">
+            <h3>Club Recruitment and Management Application</h3>
+            <p>I am a Software Engineer and Project manager on a team working to build and launch an application to assist student organizations pursue new talent and to help them manage their current members by connecting each of their productivity applications.</p>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="CONTACTbackground"></div>
+        <h2 style="background-color: #967fbdaa; border-radius: 100px; width: 300px; margin-left: auto; margin-right: auto;">Contact</h2>
+        <p style="background-color: #ffffff00; border-radius: 100px; width: 800px; margin-left: auto; margin-right: auto;">If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+        
+    </section>
+    <footer>
+        <p>&copy; 2024 Miles Samaniego. All rights reserved.</p>
+    </footer>
+    </style>
+    <script>
+        document.addEventListener('scroll', function() {
+            var headshot = document.getElementById('headshot');
+            var LEFT = document.getElementById('nameLogoLeft');
+            var RIGHT = document.getElementById('nameLogoRight');
+            var blurEffect = document.getElementById('blur-effect');
+            var rect = headshot.getBoundingClientRect();
+            var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+            if (rect.top >= -100 && rect.bottom <= windowHeight + 50) {
+                blurEffect.style.filter = 'blur(0px)';
+                //blurEffect.style.background = rgba(255, 255, 255, 0.588);
+                headshot.style.opacity = 100;
+            } else {
+                blurEffect.style.filter = 'blur(100px)';
+                //blurEffect.style.background = rgba(255, 255, 255, 0);
+                headshot.style.opacity = 0.2;
+            }
+        });
+    </script>
+</body>
+</html>
