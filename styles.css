@@ -32,7 +32,7 @@
             z-index: -1; 
         } 
         .LOGObackground { 
-            position: relative; 
+            position: absolute; 
             height: 100%; 
             width: 100%; 
             scale: 200%;
